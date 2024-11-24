@@ -24,8 +24,8 @@ class ContaBancaria:
         self.numerodaconta = numerodaconta
         self.Saldo = saldo
         self.vip = vip
-Calixto = ContaBancaria('Calixto', 202020.5, 2.000, 'Sim')
-print(Calixto.numerodaconta)
+Pessoa_1 = ContaBancaria('Marcio Calisto', 202020.5, 2.000, 'Sim')
+print(Pessoa_1.numerodaconta)
 
 
 # Upgrad-0.1
