@@ -7,7 +7,7 @@ class Tamagoshi:
         self.idade = Idade
         self.fome = 100
         self.saude = 100
-        
+
     @property
     def Idade(self):
         # Getter para o atributo Idade.
@@ -43,3 +43,30 @@ class Tamagoshi:
         # Setter para o atributo Fome.
         # Permite alterar o valor de __Fome, indicando se o bichinho está faminto ou saciado.
         self.__Fome = Fome
+
+    def get_Humor(self):
+        # Método que avalia o humor do bichinho virtual com base em sua fome e saúde.
+        # Usa condições para verificar os níveis de fome e saúde, e imprime o humor correspondente.
+        if self.__Fome >= 60 and self.__Saude >= 75:
+            print("Estou muitooooo bemmm!!!")  # O bichinho está em ótimo estado.
+        elif self.__Fome >= 45 and self.__Saude >= 55:
+            print(
+                "Preciso de cuidados, pfvr."
+            )  # O bichinho precisa de atenção, mas ainda está razoavelmente bem.
+        elif self.__Fome >= 30 and self.__Saude >= 40:
+            print(
+                "Estou a passar muito mal, me ajude."
+            )  # O bichinho está em uma situação preocupante.
+        else:
+            print("Estou morrendo!!!")  # O bichinho está em estado crítico.
+
+
+# Criando uma instância do bichinho virtual com nome "Claudinho" e idade 10.
+Claudinho = BichinhoVirtual("Claudinho", 10)
+
+# Alterando os atributos de fome e saúde do bichinho diretamente pelos setters.
+Claudinho.Fome = 50
+Claudinho.Saude = 50
+
+# Avaliando e exibindo o humor do bichinho com base nos valores de fome e saúde.
+Claudinho.get_Humor()
