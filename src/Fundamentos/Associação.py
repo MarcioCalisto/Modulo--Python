@@ -1,31 +1,3 @@
-class Salario:
-    def __init__(self, valor_da_hora, qtd_Horas, comissao) -> None:
-        self.Valor_Hora = valor_da_hora
-        self.Qtd_Hora = qtd_Horas
-        self.Comissao = comissao
-
-    def CalcularSalario(self):
-        return (self.Valor_Hora * self.Qtd_Hora) + self.Comissão
-
-
-class Funcionario:
-    def __init__(self, nome, idade, valor_da_hora, qtd_hora, comissao) -> None:
-        self.Nome = nome
-        self.Idade = idade
-        self.Salario = Salario(valor_da_hora, qtd_hora, comissao)
-
-    def SalarioTotal(self):
-        return self.Salario.CalcularSalario()
-
-
-Funcionario = Funcionario("Calixto", 16, 22, 160, 1500)
-
-print(f"Salario Total: {Funcionario.SalarioTotal()}")
-
-
-######################################################################
-
-
 class Endereco:
     def __init__(self, rua, bairro, cidade):
         self.__rua = rua
