@@ -6,7 +6,7 @@ n2 = int(input('Digite o segundo número: '))
 if n1 > n2:
     print(f'O {n1} é maior')
 elif n2 > n1:
- print(f'O {n2} é maior')
+    print(f'O {n2} é maior')
 
 ### Questão 02
 Letra = str(input('Digite sua letra: '))

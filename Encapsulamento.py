@@ -37,7 +37,7 @@ print(f'Nome: {pessoa.nome}')
 print(f'Idade: {pessoa.idade}')
 print(f'CPF: {pessoa.cpf}')
 
-##########################################################################
+
 
 
 class Estacionamento():
