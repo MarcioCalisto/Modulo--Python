@@ -95,35 +95,7 @@ escola.matricularAluno(aluno2)
 escola.listarAlunos()
 
 
-######################################################################
-
-
-"""
-class Pessoa                                                        : 
-    def __init__(self, Nome, Idade, Cpf) -> None                    : 
-        self.Nome                                                   = Nome
-        self.Idade                                                  = Idade
-        self.Cpf                                                    = Cpf
-        
-
-class Aluno(Pessoa)                                                 : 
-    pass
-
-
-class Professor(Pessoa)                                             : 
-    pass
-
-
-class Coordenador(Pessoa)                                           : 
-    pass
-
-
-a1                                                                  = Aluno('Calixto', 16, '822.355.533-35')
-print(f'Nome                                                        : {a1.Nome}')
-print(f'Idade                                                       : {a1.Idade}')
-print(f'Cpf                                                         : {a1.Cpf}')
-"""
-
+#####################################################################
 
 class Funcionario                                                   : 
     def __init__(self)                                              : 
